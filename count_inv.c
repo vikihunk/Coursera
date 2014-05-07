@@ -73,9 +73,9 @@ int main() {
         }
         fclose(fp);
         printf("Sorted array:\n");
-        merge_sort(array, 0, MAX_LEN);
+        merge_sort(array, 0, MAX_LEN-1);
         for(i = 0; i < MAX_LEN; i++) {
-                printf("[%d]: %d\n", array[i]);
+                printf("[%d]: %d\n", i, array[i]);
         }
         total_inv = count_inversions(array, MAX_LEN);
         //printf("Total inversions: %d\n", total_inv);
